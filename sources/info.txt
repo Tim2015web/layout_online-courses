@@ -1,0 +1,5 @@
+
+Layout - Online Courses
+Fonts: Lato-Regular, Lato-Bold, Lato-Blac
+
+1920px > 1230px

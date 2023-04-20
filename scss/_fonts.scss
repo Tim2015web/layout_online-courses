@@ -1,11 +1,31 @@
 /*Fonts*/
 
 @font-face {
-    font-family: "Bebas Neue";
+    font-family: "Lato";
     font-style: normal;
     font-weight: 400;
-    src: local("Bebas Neue"),
-        url("../fonts/BebasNeue-Regular.woff2") format("woff2"),
-        url("../fonts/BebasNeue-Regular.woff") format("woff"),
-        url("../fonts/BebasNeue-Regular.ttf") format("ttf");
+    src: local("Lato"),
+        url("../fonts/Lato-Regular.woff2") format("woff2"),
+        url("../fonts/Lato-Regular.woff") format("woff"),
+        url("../fonts/Lato-Regular.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 700;
+    src: local("Lato"),
+        url("../fonts/Lato-Bold.woff2") format("woff2"),
+        url("../fonts/Lato-Bold.woff") format("woff"),
+        url("../fonts/Lato-Bold.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 900;
+    src: local("Lato"),
+        url("../fonts/Lato-Black.woff2") format("woff2"),
+        url("../fonts/Lato-Black.woff") format("woff"),
+        url("../fonts/Lato-Black.ttf") format("ttf");
 }
