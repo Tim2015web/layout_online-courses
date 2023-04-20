@@ -1,0 +1,14 @@
+@import "_nullstyle";
+@import "_commonstyle";
+
+@import "_header";
+@import "_footer";
+@import "_fonts";
+
+@media (min-width: 641px) and (max-width: 1200px) {
+    @import "_tabletstyle";
+}
+
+@media (max-width: 640px) {
+    @import "_mobilestyle";
+}
