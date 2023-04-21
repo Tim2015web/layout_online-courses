@@ -90,7 +90,6 @@ h6 {
 /*Common style*/
 body {
   font-family: "Lato", "Arial", sans-serif;
-  color: #424551;
 }
 
 .top-bar {
@@ -143,7 +142,7 @@ body {
   color: #424551;
 }
 
-.buttons-basic {
+.buttons-basic-solid {
   padding: 0px 40px;
   background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
   border-radius: 4px;
@@ -152,6 +151,24 @@ body {
   font-size: 16px;
   line-height: 52px;
   color: #FFFFFF;
+}
+
+.buttons-basic-outline {
+  padding: 0px 39px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 50px;
+  letter-spacing: 0.5px;
+  border-radius: 4px;
+  border: 1px solid #F75E05;
+  background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.button-play {
+  width: 84px;
+  height: 84px;
 }
 
 /*Header*/
@@ -174,13 +191,27 @@ body {
   display: flex;
   justify-content: space-between;
   max-width: 1230px;
-  margin: 128px auto 0 auto;
+  margin: 116px auto 0 auto;
 }
 .header .header-wrap .header-content {
   margin: 12px 0 0 0;
 }
+.header .header-wrap .header-content .play-video {
+  display: flex;
+  margin: 12px 0 0 0;
+}
+.header .header-wrap .header-content .play-video__text-wrap {
+  margin: auto 0;
+}
+.header .header-wrap .header-content .play-video__text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 150%;
+  color: #1E212C;
+}
 .header .header-wrap .header-content .title {
   max-width: 496px;
+  margin: 24px 0 0 0;
 }
 .header .header-wrap .header-content .title__main-title {
   font-weight: 900;
@@ -188,6 +219,13 @@ body {
   line-height: 130%;
   letter-spacing: 1px;
   color: #1E212C;
+}
+.header .header-wrap .header-content .header-btn {
+  display: flex;
+  margin: 60px 0 0 0;
+}
+.header .header-wrap .header-content .header-btn__btn-about-us {
+  margin: 0 24px 0 0;
 }
 /*Footer*/ /*Fonts*/
 @font-face {

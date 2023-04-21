@@ -20,15 +20,31 @@
         display: flex;
         justify-content: space-between;
         max-width: 1230px;
-        margin: 128px auto 0 auto;
+        margin: 116px auto 0 auto;
 
         .header-content {
             margin: 12px 0 0 0;
 
-            .play-video {}
+            .play-video {
+                display: flex;
+                margin: 12px 0 0 0;
+
+                &__text-wrap {
+                    margin: auto 0;
+                }
+
+                &__text {
+                    font-weight: 700;
+                    font-size: 14px;
+                    line-height: 150%;
+                    color: #1E212C;
+                }
+            }
 
             .title {
                 max-width: 496px;
+                margin: 24px 0 0 0;
+
                 &__main-title {
                     font-weight: 900;
                     font-size: 64px;
@@ -38,7 +54,14 @@
                 }
             }
 
-            .header-btn {}
+            .header-btn {
+                display: flex;
+                margin: 60px 0 0 0;
+
+                &__btn-about-us{
+                    margin: 0 24px 0 0;
+                }
+            }
 
             &__image {}
         }

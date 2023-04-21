@@ -2,7 +2,6 @@
 
 body {
     font-family: 'Lato', 'Arial', sans-serif;
-    color: #424551;
 }
 
 .top-bar {
@@ -76,7 +75,7 @@ body {
     }
 }
 
-.buttons-basic {
+.buttons-basic-solid {
     padding: 0px 40px;
     background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
     border-radius: 4px;
@@ -86,4 +85,24 @@ body {
     font-size: 16px;
     line-height: 52px;
     color: #FFFFFF;
+}
+
+.buttons-basic-outline {
+    padding: 0px 39px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 50px;
+    letter-spacing: 0.5px;
+
+    border-radius: 4px;
+    border: 1px solid #F75E05;
+    background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.button-play {
+    width: 84px;
+    height: 84px;
 }
