@@ -227,6 +227,26 @@ body {
 .header .header-wrap .header-content .header-btn__btn-about-us {
   margin: 0 24px 0 0;
 }
+.header .statistics {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1230px;
+  margin: 189px auto 0 auto;
+}
+.header .statistics__count {
+  font-weight: 900;
+  font-size: 46px;
+  line-height: 130%;
+  text-align: right;
+  color: #1E212C;
+}
+.header .statistics__label {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #1E212C;
+}
+
 /*Footer*/ /*Fonts*/
 @font-face {
   font-family: "Lato";
