@@ -1,0 +1,22 @@
+/*About*/
+
+.about {
+    margin: 180px 0 0 0;
+    max-width: 1230px;
+    display: flex;
+
+    .about-wrap {
+        &__img-warp {}
+
+        &__content {}
+
+        &__pre-title {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 150%;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #1E212C;
+        }
+    }
+}

@@ -174,7 +174,7 @@ body {
 /*Header*/
 .header {
   position: relative;
-  padding: 20px 0 0 0;
+  padding: 20px 0 80px 0;
 }
 .header::before {
   content: "";
@@ -233,7 +233,12 @@ body {
   max-width: 1230px;
   margin: 189px auto 0 auto;
 }
+.header .statistics__items {
+  display: flex;
+  align-items: center;
+}
 .header .statistics__count {
+  margin: 0 12px 0 0;
   font-weight: 900;
   font-size: 46px;
   line-height: 130%;
@@ -244,6 +249,24 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 160%;
+  color: #1E212C;
+}
+.header .statistics__dot-wrap {
+  display: flex;
+  align-items: center;
+}
+/*About*/
+.about {
+  margin: 180px 0 0 0;
+  max-width: 1230px;
+  display: flex;
+}
+.about .about-wrap__pre-title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
   color: #1E212C;
 }
 
