@@ -1,22 +1,43 @@
 /*About*/
 
 .about {
-    margin: 180px 0 0 0;
+    margin: 180px auto 0 auto;
     max-width: 1230px;
-    display: flex;
 
     .about-wrap {
-        &__img-warp {}
+        display: flex;
+        justify-content: space-between;
 
-        &__content {}
+        &__img-wrap {
+            width: 705px;
+        }
 
-        &__pre-title {
-            font-weight: 700;
-            font-size: 16px;
-            line-height: 150%;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            color: #1E212C;
+        &__content {
+            width: 390px;
+        }
+
+        .bulleted-list {
+            margin: 40px 0 48px 0;
+
+            //&__items {}
+
+            &__item {
+                margin: 0 0 13px 0;
+
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 160%;
+                color: #424551;
+
+                background: url(../img/about__ico-check.svg) no-repeat 0 5px;
+                padding-left: 32px;
+            }
+
+            &__item:last-child {
+                margin: 0;
+            }
         }
     }
+
+    //.bulleted-list{}
 }

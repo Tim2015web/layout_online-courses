@@ -41,7 +41,7 @@
                 }
             }
 
-            .title {
+            .main-title-wrap {
                 max-width: 496px;
                 margin: 24px 0 0 0;
 
@@ -49,7 +49,7 @@
                     font-weight: 900;
                     font-size: 64px;
                     line-height: 130%;
-                    letter-spacing: 1px;
+                    //letter-spacing: 1px;
                     color: #1E212C;
                 }
             }
@@ -63,7 +63,7 @@
                 }
             }
 
-            &__image {}
+            //&__image {}
         }
     }
 
@@ -100,6 +100,6 @@
             align-items: center;
         }
 
-        &__dot-img {}
+        //&__dot-img {}
     }
 }
