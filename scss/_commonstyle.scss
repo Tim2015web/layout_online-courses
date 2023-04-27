@@ -138,3 +138,38 @@ body {
         color: #1E212C;
     }
 }
+
+.badge {
+    display: flex;
+    border-radius: 4px;
+    padding: 1px 8px;
+
+    //&__text {}
+
+    &__link {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+        color: #FFFFFF;
+    }
+
+    &--marketing {
+        width: 80px;
+        background: #03CEA4;
+    }
+
+    &--management {
+        width: 98px;
+        background: #5A87FC;
+    }
+
+    &--hr {
+        width: 111px;
+        background: #F89828;
+    }
+
+    &--design {
+        width: 59px;
+        background: #F52F6E;
+    }
+}
