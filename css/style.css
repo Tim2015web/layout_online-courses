@@ -198,6 +198,9 @@ body {
   line-height: 130%;
   color: #1E212C;
 }
+.heading--center {
+  text-align: center;
+}
 
 .badge {
   display: flex;
@@ -393,6 +396,48 @@ body {
 }
 .courses .courses-wrap .courses-main__info-speaker {
   color: #787A80;
+}
+
+/*Benefits*/
+.benefits {
+  margin: 150px 0 0 0;
+}
+.benefits .benefits-wrap {
+  max-width: 1230px;
+  margin: 0 auto;
+}
+.benefits .benefits-bar__item {
+  display: flex;
+  justify-content: center;
+  width: 25%;
+  height: 46px;
+}
+.benefits .benefits-bar__item:hover {
+  border: 1px solid #FF3F3A;
+  border-radius: 4px;
+}
+.benefits .benefits-bar__icon {
+  width: 16px;
+  content: url(../img/benefits__ico1_false.svg);
+}
+.benefits .benefits-bar__link {
+  margin: auto 0 auto 8px;
+  height: 26px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 160%;
+  color: #9A9CA5;
+}
+.benefits .benefits-bar__link:hover {
+  color: #FF3F3A;
+}
+
+.benefits-bar__item:hover .benefits-bar__icon {
+  content: url(../img/benefits__ico1_true.svg);
+}
+
+.benefits-bar__item:hover .benefits-bar__link {
+  color: #FF3F3A;
 }
 
 /*Footer*/ /*Fonts*/
