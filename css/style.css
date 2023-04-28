@@ -90,6 +90,7 @@ h6 {
 /*Common style*/
 body {
   font-family: "Lato", "Arial", sans-serif;
+  background: #F4F5F7;
 }
 
 .top-bar {
@@ -332,6 +333,7 @@ body {
 .about {
   margin: 180px auto 0 auto;
   max-width: 1230px;
+  background-color: #ffffff;
 }
 .about .about-wrap {
   display: flex;
@@ -598,6 +600,11 @@ body {
   font-size: 28px;
   line-height: 150%;
   color: #1E212C;
+}
+
+/*Certificate*/
+.certificate .certificate-wrap {
+  margin: 120px 0 0 0;
 }
 
 /*Footer*/ /*Fonts*/
