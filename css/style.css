@@ -90,7 +90,6 @@ h6 {
 /*Common style*/
 body {
   font-family: "Lato", "Arial", sans-serif;
-  background: #F4F5F7;
 }
 
 .top-bar {
@@ -330,12 +329,9 @@ body {
 }
 
 /*About*/
-.about {
-  margin: 180px auto 0 auto;
-  max-width: 1230px;
-  background-color: #ffffff;
-}
 .about .about-wrap {
+  max-width: 1230px;
+  margin: 180px auto 0 auto;
   display: flex;
   justify-content: space-between;
 }
@@ -362,7 +358,7 @@ body {
 }
 
 /*Courses*/
-.courses {
+.courses .courses-wrap {
   margin: 180px auto 0 auto;
   max-width: 1230px;
 }
@@ -415,12 +411,9 @@ body {
 }
 
 /*Benefits*/
-.benefits {
-  margin: 150px 0 0 0;
-}
 .benefits .benefits-wrap {
   max-width: 1230px;
-  margin: 0 auto;
+  margin: 150px auto 0 auto;
 }
 .benefits .benefits-bar {
   display: flex;
@@ -604,7 +597,137 @@ body {
 
 /*Certificate*/
 .certificate .certificate-wrap {
-  margin: 120px 0 0 0;
+  margin: 120px auto 0 auto;
+  max-width: 1230px;
+  display: flex;
+  justify-content: space-between;
+  height: 454px;
+}
+.certificate__content {
+  width: 397px;
+}
+.certificate__text {
+  margin: 48px 0 0 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #424551;
+}
+.certificate__ico-wrap {
+  margin: 32px 0 0 0;
+  display: flex;
+  justify-content: space-between;
+}
+.certificate__img {
+  border: 1px solid #E5E8ED;
+  box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.16), 0px 30px 24px -10px rgba(154, 156, 165, 0.1), 0px 12px 10px -6px rgba(154, 156, 165, 0.08), 0px 4px 4px -4px rgba(30, 33, 44, 0.05);
+  border-radius: 4px;
+}
+
+/*Team*/
+.team {
+  padding: 167px 0 0 0;
+  background: #F4F5F7;
+}
+.team .team-wrap {
+  margin: 0 auto 0 auto;
+  max-width: 1230px;
+}
+.team .team-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.team .team-header__slider-controll {
+  display: flex;
+}
+.team .team-header__arrow {
+  width: 48px;
+  height: 48px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.team .team-header__arrow--left {
+  background-image: url(../img/control_arrow-left-false.svg);
+}
+.team .team-header__arrow--right {
+  background-image: url(../img/control_arrow-right-false.svg);
+}
+.team .team-main {
+  margin: 60px 0 0 0;
+  display: flex;
+  justify-content: space-between;
+}
+.team .team-main__card {
+  width: 285px;
+}
+.team .team-main__card-img {
+  width: 285px;
+  height: 340px;
+  background: #FFCF2D;
+  border-radius: 4px;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+}
+.team .team-main__card-img-mask {
+  display: none;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  background: linear-gradient(180deg, rgba(30, 33, 44, 0) 43.9%, rgba(30, 33, 44, 0.03) 55.21%, rgba(30, 33, 44, 0.33) 68.73%, rgba(30, 33, 44, 0.56) 76.17%, rgba(30, 33, 44, 0.768225) 83.75%, rgba(30, 33, 44, 0.92) 91.49%, #1E212C 100%);
+}
+.team .team-main__card-img--first {
+  background-image: url(../img/team-img1.webp);
+}
+.team .team-main__card-img--second {
+  background-image: url(../img/team-img2.webp);
+}
+.team .team-main__card-img--third {
+  background-image: url(../img/team-img3.webp);
+}
+.team .team-main__card-img--fourth {
+  background-image: url(../img/team-img4.webp);
+}
+.team .team-main__socials-bar {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1;
+}
+.team .team-main__item {
+  width: 20px;
+  height: 20px;
+  margin: 0 12px 0 0;
+  fill: #FFFFFF;
+  opacity: 0.6;
+}
+.team .team-main__item:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.team .team-main__item:last-child {
+  margin: 0;
+}
+.team .team-main__name {
+  margin: 16px 0 0 0;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  text-align: center;
+  color: #424551;
+}
+.team .team-main__position {
+  margin: 4px 0 0 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  text-align: center;
+  color: #787A80;
+}
+
+.team-main__card-img:hover .team-main__card-img-mask {
+  display: block;
 }
 
 /*Footer*/ /*Fonts*/

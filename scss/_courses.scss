@@ -1,11 +1,9 @@
 /*Courses*/
 
 .courses {
-    margin: 180px auto 0 auto;
-    max-width: 1230px;
-
     .courses-wrap {
-
+        margin: 180px auto 0 auto;
+        max-width: 1230px;
 
         .courses-header {
             display: flex;
@@ -63,7 +61,7 @@
                 color: #787A80;
             }
 
-            &__info-price{
+            &__info-price {
                 font-weight: 700;
                 color: #FF4242;
             }
