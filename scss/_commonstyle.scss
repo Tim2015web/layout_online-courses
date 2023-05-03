@@ -135,6 +135,7 @@ body {
 }
 
 .heading {
+    max-width: 810px;
 
     &__pre-title {
         margin: 0 0 8px 0;
@@ -154,6 +155,7 @@ body {
     }
 
     &--center{
+        margin: 0 auto;
         text-align: center;
     }
 }

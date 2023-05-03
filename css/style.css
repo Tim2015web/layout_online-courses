@@ -197,6 +197,9 @@ body {
   height: 84px;
 }
 
+.heading {
+  max-width: 810px;
+}
 .heading__pre-title {
   margin: 0 0 8px 0;
   font-weight: 700;
@@ -213,6 +216,7 @@ body {
   color: #1E212C;
 }
 .heading--center {
+  margin: 0 auto;
   text-align: center;
 }
 
@@ -911,6 +915,46 @@ body {
 .blog .blog-card__link-ico {
   margin: 0 0 0 8px;
   vertical-align: middle;
+}
+
+/*Subscribe*/
+.subscribe {
+  position: relative;
+}
+.subscribe::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+  opacity: 0.2;
+  z-index: -1;
+}
+.subscribe .subscribe-wrap {
+  margin: 0 auto;
+  padding: 120px 0 181px 0;
+  max-width: 1230px;
+}
+.subscribe .subscribe-form {
+  margin: 60px 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.subscribe .subscribe-form__field {
+  margin: 0 24px 0 0;
+  width: 422px;
+  height: 52px;
+  background: #FFFFFF;
+  border: 1px solid #D7DADD;
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #9A9CA5;
+  padding: 13px 0 13px 16px;
 }
 
 /*Footer*/ /*Fonts*/
