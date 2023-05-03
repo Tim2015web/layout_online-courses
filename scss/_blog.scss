@@ -1,0 +1,111 @@
+/*Blog*/
+
+.blog {
+    .blog-wrap {
+        margin: 120px auto 180px auto;
+        max-width: 1230px;
+    }
+
+    .blog-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    //&__button-wrap{}
+
+    .blog-main {
+        display: flex;
+        justify-content: space-between;
+        margin: 60px 0 0 0;
+    }
+
+    .blog-card {
+        width: 390px;
+
+        &__image-wrap {
+            position: relative;
+        }
+
+        &__image {
+            border-radius: 4px;
+        }
+
+        &__image-badge {
+            display: flex;
+            padding: 1px 8px;
+            background: #FFFFFF;
+            border-radius: 4px;
+
+            position: absolute;
+            top: 12px;
+            left: 12px;
+        }
+
+        &__image-badge-ico {
+            margin: 0 4px 0 0;
+        }
+
+        &__image-badge-lable {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 150%;
+            color: #424551;
+        }
+
+        //&__content{}
+
+        &__meta-bar {
+            margin: 16px 0 0 0;
+        }
+
+        &__meta {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 150%;
+            color: #787A80;
+        }
+
+        &__meta-link {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 150%;
+            color: #787A80;
+        }
+
+        &__meta-icon {
+            vertical-align: text-top;
+        }
+
+        &__title {
+            margin: 8px 0;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 150%;
+            color: #1E212C;
+        }
+
+        &__text {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 160%;
+            color: #424551;
+        }
+
+        &__link-wrap{
+            margin: 16px 0 0 0;
+        }
+
+        &__link {            
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 160%;
+            color: #1E212C;
+        }
+
+        &__link-ico{
+            margin: 0 0 0 8px;
+            vertical-align: middle;
+        }
+    }
+}
