@@ -25,22 +25,6 @@
         .header-content {
             margin: 12px 0 0 0;
 
-            .play-video {
-                display: flex;
-                margin: 12px 0 0 0;
-
-                &__text-wrap {
-                    margin: auto 0;
-                }
-
-                &__text {
-                    font-weight: 700;
-                    font-size: 14px;
-                    line-height: 150%;
-                    color: #1E212C;
-                }
-            }
-
             .main-title-wrap {
                 max-width: 496px;
                 margin: 24px 0 0 0;
@@ -101,5 +85,47 @@
         }
 
         //&__dot-img {}
+    }
+
+    .header-mask {
+        //position: relative;
+        width: 100%;
+        height: 100%;
+
+        &__shape {
+            position: absolute;
+            z-index: -1;
+
+            &--first {
+                left: 9.27%;
+                top: 21.2%;
+            }
+
+            &--second {
+                right: 7.4%;
+                top: 3.04%;
+            }
+
+            &--third {
+                left: 782px;
+                top: 487px;
+            }
+
+            &--fourth {
+                left: 733px;
+                top: 758px;
+            }
+
+            &--fifth {
+                right: 0;
+                top: 749px;
+            }
+
+            &--sixth {
+                bottom: 0;
+                left: 0;
+                opacity: 0.2;
+            }
+        }
     }
 }
