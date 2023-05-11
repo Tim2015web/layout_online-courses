@@ -162,6 +162,10 @@ body {
   color: #FFFFFF;
 }
 
+.buttons-basic-solid-large:hover {
+  background: linear-gradient(55.95deg, #e63934 0%, #de5505 100%);
+}
+
 .buttons-basic-solid-regular {
   padding: 0px 32px;
   background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
@@ -171,6 +175,10 @@ body {
   font-size: 14px;
   line-height: 44px;
   color: #FFFFFF;
+}
+
+.buttons-basic-solid-regular:hover {
+  background: linear-gradient(55.95deg, #e63934 0%, #de5505 100%);
 }
 
 .buttons-basic-outline-large {

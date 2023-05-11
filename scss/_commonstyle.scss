@@ -99,6 +99,11 @@ body {
     color: #FFFFFF;
 }
 
+.buttons-basic-solid-large:hover {
+    background: linear-gradient(55.95deg, #e63934 0%, #de5505 100%);
+    //opacity: 0.8;
+}
+
 .buttons-basic-solid-regular {
     padding: 0px 32px;
     background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
@@ -109,6 +114,11 @@ body {
     font-size: 14px;
     line-height: 44px;
     color: #FFFFFF;
+}
+
+.buttons-basic-solid-regular:hover {
+    background: linear-gradient(55.95deg, #e63934 0%, #de5505 100%);
+    //opacity: 0.8;
 }
 
 .buttons-basic-outline-large {
@@ -257,7 +267,7 @@ body {
 
     &__arrow {
         cursor: pointer;
-        
+
         //&-left {}
         //&-right {}
     }
@@ -265,17 +275,19 @@ body {
     //&__img-left{}
     //&__arrow-righ{}
 
-    .control-arrow__arrow-left:hover circle{
+    .control-arrow__arrow-left:hover circle {
         fill: #FF3F3A;
     }
-    .control-arrow__arrow-left:hover path{
+
+    .control-arrow__arrow-left:hover path {
         fill: #FFFFFF;
     }
-    
-    .control-arrow__arrow-right:hover circle{
+
+    .control-arrow__arrow-right:hover circle {
         fill: #FF3F3A;
     }
-    .control-arrow__arrow-right:hover path{
+
+    .control-arrow__arrow-right:hover path {
         fill: #FFFFFF;
     }
 }
