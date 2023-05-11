@@ -747,6 +747,7 @@ body {
   background: #F4F5F7;
 }
 .team .team-wrap {
+  position: relative;
   margin: 0 auto 0 auto;
   max-width: 1230px;
 }
@@ -852,7 +853,7 @@ body {
 .team .team-mask__dots {
   position: absolute;
   top: 35px;
-  left: 1252px;
+  right: 525px;
   z-index: 0;
 }
 .team .team-mask__shapes {
@@ -1123,13 +1124,13 @@ body {
   color: #9A9CA5;
   padding: 13px 0 13px 16px;
 }
-.subscribe__illustration-left {
+.subscribe .subscribe-mask__illustration-left {
   position: absolute;
   z-index: -1;
   bottom: 0;
   left: 0;
 }
-.subscribe__illustration-right {
+.subscribe .subscribe-mask__illustration-right {
   position: absolute;
   z-index: -1;
   bottom: 0;

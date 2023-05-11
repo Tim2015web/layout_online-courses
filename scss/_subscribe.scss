@@ -43,17 +43,19 @@
         }
     }
 
-    &__illustration-left {
-        position: absolute;
-        z-index: -1;
-        bottom: 0;
-        left: 0;
-    }
+    .subscribe-mask {
+        &__illustration-left {
+            position: absolute;
+            z-index: -1;
+            bottom: 0;
+            left: 0;
+        }
 
-    &__illustration-right {
-        position: absolute;
-        z-index: -1;
-        bottom: 0;
-        right: 0;
+        &__illustration-right {
+            position: absolute;
+            z-index: -1;
+            bottom: 0;
+            right: 0;
+        }
     }
 }

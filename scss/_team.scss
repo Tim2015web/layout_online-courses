@@ -6,6 +6,7 @@
     background: #F4F5F7;
 
     .team-wrap {
+        position: relative;
         margin: 0 auto 0 auto;
         max-width: 1230px;
     }
@@ -135,7 +136,7 @@
         &__dots{
             position: absolute;
             top: 35px;
-            left: 1252px;
+            right: 525px;
             z-index: 0;
         }
 
