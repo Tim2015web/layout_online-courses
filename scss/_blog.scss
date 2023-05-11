@@ -71,6 +71,10 @@
             font-size: 14px;
             line-height: 150%;
             color: #787A80;
+            
+            &:hover{
+                text-decoration: underline;
+            }
         }
 
         &__meta-icon {
@@ -79,11 +83,21 @@
 
         &__title {
             margin: 8px 0;
+        }
+
+        &__title-link {
+            
             font-weight: 700;
             font-size: 20px;
             line-height: 150%;
             color: #1E212C;
+
+            &:hover{
+                color: #FF3F3A;
+            }
         }
+
+
 
         &__text {
             font-weight: 400;

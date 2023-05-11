@@ -75,11 +75,17 @@
             width: 757px;
         }
 
-        &__title {
+        //&__title {}
+
+        &__title-link {
             font-weight: 700;
             font-size: 20px;
             line-height: 150%;
             color: #1E212C;
+
+            &:hover {
+                color: #FF3F3A;
+            }
         }
 
         &__sub-title {
@@ -112,6 +118,23 @@
             font-size: 28px;
             line-height: 150%;
             color: #1E212C;
+        }
+    }
+
+    .events-mask {
+        &__dots {
+            position: absolute;
+            left: 10px;
+            bottom: 7px;
+            opacity: 0.8;
+            z-index: -1;
+        }
+
+        &__circles {
+            position: absolute;
+            right: 0;
+            top: -142px;
+            z-index: -1;
         }
     }
 }

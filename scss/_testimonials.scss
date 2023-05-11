@@ -1,6 +1,7 @@
 /*Testimonials*/
 
 .testimonials {
+    position: relative;
     padding: 180px 0 155px 0;
     background: #F4F5F7;
 
@@ -33,6 +34,7 @@
         &__content {
             display: flex;
             justify-content: space-between;
+            z-index: 1;        
         }
 
         &__braces {
@@ -110,10 +112,41 @@
         &__dot {
             margin: 0 6px;
             cursor: pointer;
+            z-index: 1;  
         }
 
         &__dot--active line {
             stroke: #424551;
+        }
+    }
+
+    .testimonials-mask {
+        &__circles {
+            position: absolute;
+            top: 0;
+            left: 75px;
+            z-index: 0;
+        }
+
+        &__shapes {
+            position: absolute;
+            top: 150px;
+            left: 1000px;
+            z-index: 0;
+        }
+
+        &__dots {
+            position: absolute;
+            bottom: 98px;
+            left: 343px;
+            z-index: 0;
+        }
+
+        &__circles-second {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            z-index: 0;
         }
     }
 }

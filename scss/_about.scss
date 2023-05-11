@@ -1,6 +1,7 @@
 /*About*/
 
-.about {   
+.about {
+    position: relative;
 
     .about-wrap {
         max-width: 1230px;
@@ -36,6 +37,22 @@
             &__item:last-child {
                 margin: 0;
             }
+        }
+    }
+
+    .about-mask {
+        &__dots {
+            position: absolute;
+            left: 0;
+            top: 150px;
+            z-index: -1;
+        }
+
+        &__circles {
+            position: absolute;
+            right: 0;
+            top: 200px;
+            z-index: -1;
         }
     }
 

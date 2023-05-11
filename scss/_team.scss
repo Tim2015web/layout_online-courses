@@ -1,6 +1,7 @@
 /*Team*/
 
 .team {
+    position: relative;
     padding: 167px 0 0 0;
     background: #F4F5F7;
 
@@ -41,6 +42,7 @@
 
         &__card {
             width: 285px;
+            z-index: 1;
         }
 
         &__card-img {
@@ -119,6 +121,29 @@
             line-height: 160%;
             text-align: center;
             color: #787A80;
+        }
+    }
+
+    .team-mask{
+        &__vector{
+            position: absolute;
+            top: 83px;
+            left: 204px;
+            z-index: 0;
+        }
+
+        &__dots{
+            position: absolute;
+            top: 35px;
+            left: 1252px;
+            z-index: 0;
+        }
+
+        &__shapes{
+            position: absolute;
+            top: 536px;
+            right: 0;
+            z-index: 0;
         }
     }
 }
