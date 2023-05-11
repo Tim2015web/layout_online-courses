@@ -15,25 +15,6 @@
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
-
-        &__slider-controll {
-            display: flex;
-        }
-
-        &__arrow {
-            width: 48px;
-            height: 48px;
-            background-position: center;
-            background-repeat: no-repeat;
-        }
-
-        &__arrow--left {
-            background-image: url(../img/control_arrow-left-false.svg);
-        }
-
-        &__arrow--right {
-            background-image: url(../img/control_arrow-right-false.svg);
-        }
     }
 
     .team-main {

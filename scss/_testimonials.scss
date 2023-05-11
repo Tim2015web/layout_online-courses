@@ -8,7 +8,6 @@
     .testimonials-wrap {
         margin: 0 auto 0 auto;
         max-width: 1230px;
-
         height: 500px;
     }
 
@@ -88,19 +87,7 @@
         }
 
         &__arrow {
-            width: 48px;
-            height: 48px;
-            background-position: center;
-            background-repeat: no-repeat;
             cursor: pointer;
-        }
-
-        &__arrow--left {
-            background-image: url(../img/control_arrow-left-false.svg);
-        }
-
-        &__arrow--right {
-            background-image: url(../img/control_arrow-right-false.svg);
         }
 
         &__footer {
@@ -118,6 +105,20 @@
         &__dot--active line {
             stroke: #424551;
         }
+    }
+
+    .testimonials-slider__arrow-left:hover circle{
+        fill: #FF3F3A;
+    }
+    .testimonials-slider__arrow-left:hover path{
+        fill: #FFFFFF;
+    }
+    
+    .testimonials-slider__arrow-right:hover circle{
+        fill: #FF3F3A;
+    }
+    .testimonials-slider__arrow-right:hover path{
+        fill: #FFFFFF;
     }
 
     .testimonials-mask {

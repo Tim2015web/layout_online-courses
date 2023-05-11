@@ -292,6 +292,25 @@ body {
   background: #F52F6E;
 }
 
+.control-arrow {
+  display: flex;
+}
+.control-arrow__arrow {
+  cursor: pointer;
+}
+.control-arrow .control-arrow__arrow-left:hover circle {
+  fill: #FF3F3A;
+}
+.control-arrow .control-arrow__arrow-left:hover path {
+  fill: #FFFFFF;
+}
+.control-arrow .control-arrow__arrow-right:hover circle {
+  fill: #FF3F3A;
+}
+.control-arrow .control-arrow__arrow-right:hover path {
+  fill: #FFFFFF;
+}
+
 @keyframes play-button-pulsation {
   0% {
     outline: 1px solid rgba(255, 63, 58, 0.12);
@@ -756,21 +775,6 @@ body {
   justify-content: space-between;
   align-items: flex-end;
 }
-.team .team-header__slider-controll {
-  display: flex;
-}
-.team .team-header__arrow {
-  width: 48px;
-  height: 48px;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.team .team-header__arrow--left {
-  background-image: url(../img/control_arrow-left-false.svg);
-}
-.team .team-header__arrow--right {
-  background-image: url(../img/control_arrow-right-false.svg);
-}
 .team .team-main {
   margin: 60px 0 0 0;
   display: flex;
@@ -940,17 +944,7 @@ body {
   color: #787A80;
 }
 .testimonials .testimonials-slider__arrow {
-  width: 48px;
-  height: 48px;
-  background-position: center;
-  background-repeat: no-repeat;
   cursor: pointer;
-}
-.testimonials .testimonials-slider__arrow--left {
-  background-image: url(../img/control_arrow-left-false.svg);
-}
-.testimonials .testimonials-slider__arrow--right {
-  background-image: url(../img/control_arrow-right-false.svg);
 }
 .testimonials .testimonials-slider__footer {
   margin: 56px 0 0 0;
@@ -964,6 +958,18 @@ body {
 }
 .testimonials .testimonials-slider__dot--active line {
   stroke: #424551;
+}
+.testimonials .testimonials-slider__arrow-left:hover circle {
+  fill: #FF3F3A;
+}
+.testimonials .testimonials-slider__arrow-left:hover path {
+  fill: #FFFFFF;
+}
+.testimonials .testimonials-slider__arrow-right:hover circle {
+  fill: #FF3F3A;
+}
+.testimonials .testimonials-slider__arrow-right:hover path {
+  fill: #FFFFFF;
 }
 .testimonials .testimonials-mask__circles {
   position: absolute;

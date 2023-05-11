@@ -145,7 +145,7 @@ body {
     display: flex;
     margin: 12px 0 0 0;
 
-    &:hover{
+    &:hover {
         cursor: pointer;
     }
 
@@ -249,6 +249,34 @@ body {
     &--design {
         width: 59px;
         background: #F52F6E;
+    }
+}
+
+.control-arrow {
+    display: flex;
+
+    &__arrow {
+        cursor: pointer;
+        
+        //&-left {}
+        //&-right {}
+    }
+
+    //&__img-left{}
+    //&__arrow-righ{}
+
+    .control-arrow__arrow-left:hover circle{
+        fill: #FF3F3A;
+    }
+    .control-arrow__arrow-left:hover path{
+        fill: #FFFFFF;
+    }
+    
+    .control-arrow__arrow-right:hover circle{
+        fill: #FF3F3A;
+    }
+    .control-arrow__arrow-right:hover path{
+        fill: #FFFFFF;
     }
 }
 
