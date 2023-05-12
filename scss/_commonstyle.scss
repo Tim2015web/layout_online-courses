@@ -94,7 +94,7 @@ body {
         }
 
         @media (min-width: 641px) and (max-width: 1200px) {
-            display: none;
+            //display: none;
         }
 
         @media (max-width: 640px) {
@@ -115,6 +115,7 @@ body {
 }
 
 .buttons-basic-solid-large {
+    height: 52px;
     padding: 0px 40px;
     background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
     border-radius: 4px;
