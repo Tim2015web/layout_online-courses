@@ -1,3 +1,7 @@
+//Hamburger menu
+
+
+
 //Statistica animation
 let statisticsElement = document.querySelectorAll(".count"); //Statistics elements
 let elementArray = [];

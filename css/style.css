@@ -90,10 +90,12 @@ h6 {
 /*Common style*/
 body {
   font-family: "Lato", "Arial", sans-serif;
+  min-width: 100%;
 }
 
 .top-bar {
   display: flex;
+  justify-content: space-between;
   max-width: 1230px;
   margin: 0 auto;
 }
@@ -103,7 +105,8 @@ body {
   margin: auto 0;
 }
 .top-bar .top-menu {
-  margin: auto 224px auto 60px;
+  margin: auto 11.67vw auto 3.13vw;
+  margin-left: auto10px;
 }
 .top-bar .top-menu__wrap {
   display: flex;
@@ -122,6 +125,16 @@ body {
 }
 .top-bar .top-menu__link:hover {
   color: #FF3F3A;
+}
+@media (min-width: 641px) and (max-width: 1200px) {
+  .top-bar .top-menu {
+    display: none;
+  }
+}
+@media (max-width: 640px) {
+  .top-bar .top-menu {
+    display: none;
+  }
 }
 .top-bar .cta {
   display: flex;
@@ -149,6 +162,27 @@ body {
 }
 .top-bar .cta .enter__reg:hover {
   color: #FF3F3A;
+}
+@media (min-width: 641px) and (max-width: 1200px) {
+  .top-bar .cta {
+    display: none;
+  }
+}
+@media (max-width: 640px) {
+  .top-bar .cta {
+    display: none;
+  }
+}
+.top-bar .bars-menu {
+  display: block;
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+}
+@media (min-width: 1201px) {
+  .top-bar .bars-menu {
+    display: none;
+  }
 }
 
 .buttons-basic-solid-large {
@@ -249,6 +283,14 @@ body {
   color: #1E212C;
 }
 
+@keyframes play-button-pulsation {
+  0% {
+    outline: 1px solid rgba(255, 63, 58, 0.12);
+  }
+  100% {
+    outline: 16px solid rgba(255, 63, 58, 0.12);
+  }
+}
 .heading {
   max-width: 810px;
 }
@@ -319,18 +361,18 @@ body {
   fill: #FFFFFF;
 }
 
-@keyframes play-button-pulsation {
-  0% {
-    outline: 1px solid rgba(255, 63, 58, 0.12);
-  }
-  100% {
-    outline: 16px solid rgba(255, 63, 58, 0.12);
-  }
+.main-menu {
+  position: fixed;
+  display: none;
+  max-width: 100%;
+  height: 100%;
+  background-color: #03CEA4;
 }
+
 /*Header*/
 .header {
   position: relative;
-  padding: 20px 0 80px 0;
+  padding: 20px 20px 80px 20px;
 }
 .header::before {
   content: "";
@@ -368,6 +410,9 @@ body {
 }
 .header .header-wrap .header-content .header-btn__btn-about-us {
   margin: 0 24px 0 0;
+}
+.header .header-wrap .header-content__image {
+  width: 100%;
 }
 .header .statistics {
   display: flex;
@@ -414,11 +459,11 @@ body {
   top: 3.04%;
 }
 .header .header-mask__shape--third {
-  left: 782px;
+  left: 40.73vw;
   top: 487px;
 }
 .header .header-mask__shape--fourth {
-  left: 733px;
+  left: 38.18vw;
   top: 758px;
 }
 .header .header-mask__shape--fifth {
@@ -442,7 +487,10 @@ body {
   justify-content: space-between;
 }
 .about .about-wrap__img-wrap {
-  width: 705px;
+  max-width: 705px;
+}
+.about .about-wrap__img {
+  width: 100%;
 }
 .about .about-wrap__content {
   width: 390px;
@@ -604,6 +652,9 @@ body {
   line-height: 160%;
   color: #424551;
 }
+.benefits .benefits-main__img {
+  width: 100%;
+}
 
 .benefits-bar__item:hover .benefits-bar__icon--star {
   content: url(../img/benefits__ico1_true.svg);
@@ -762,6 +813,7 @@ body {
   justify-content: space-between;
 }
 .certificate__img {
+  width: 100%;
   border: 1px solid #E5E8ED;
   box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.16), 0px 30px 24px -10px rgba(154, 156, 165, 0.1), 0px 12px 10px -6px rgba(154, 156, 165, 0.08), 0px 4px 4px -4px rgba(30, 33, 44, 0.05);
   border-radius: 4px;
@@ -793,7 +845,7 @@ body {
   z-index: 1;
 }
 .team .team-main__card-img {
-  width: 285px;
+  max-width: 285px;
   height: 340px;
   background: #FFCF2D;
   border-radius: 4px;
@@ -899,7 +951,7 @@ body {
   align-items: center;
 }
 .testimonials .testimonials-slider__content-wrap {
-  width: 1020px;
+  max-width: 1020px;
   height: 344px;
   background: #FFFFFF;
   box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
@@ -917,7 +969,7 @@ body {
   background-image: url(../img/testimonials__braces.svg);
 }
 .testimonials .testimonials-slider__testimonial {
-  width: 752px;
+  max-width: 752px;
 }
 .testimonials .testimonials-slider__text {
   font-weight: 400;
@@ -988,7 +1040,7 @@ body {
 .testimonials .testimonials-mask__shapes {
   position: absolute;
   top: 150px;
-  left: 1000px;
+  right: 500px;
   z-index: 0;
 }
 .testimonials .testimonials-mask__dots {
@@ -1026,6 +1078,7 @@ body {
   position: relative;
 }
 .blog .blog-card__image {
+  max-width: 100%;
   border-radius: 4px;
 }
 .blog .blog-card__image-badge {

@@ -28,6 +28,7 @@
         }
 
         &__image {
+            max-width: 100%;
             border-radius: 4px;
         }
 
@@ -96,8 +97,6 @@
                 color: #FF3F3A;
             }
         }
-
-
 
         &__text {
             font-weight: 400;
