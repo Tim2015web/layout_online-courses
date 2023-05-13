@@ -2,18 +2,32 @@
 
 .about {
     position: relative;
+    padding: 0 20px;
 
     .about-wrap {
         max-width: 1230px;
         margin: 180px auto 0 auto;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-between;        
+
+        @media (min-width: 641px) and (max-width: 1200px) {
+            margin: 90px auto 0 auto;
+        }
+
+        @media (max-width: 640px) {
+            margin: 40px auto 0 auto;
+        }
 
         &__img-wrap {
             max-width: 705px;
+            margin: 0 20px 0 0;
+
+            @media (max-width: 640px) {
+                display: none;
+            }
         }
 
-        &__img{
+        &__img {
             width: 100%;
         }
 
@@ -23,6 +37,14 @@
 
         .bulleted-list {
             margin: 40px 0 48px 0;
+
+            @media (min-width: 641px) and (max-width: 1200px) {
+                margin: 20px 0 24px 0;
+            }
+    
+            @media (max-width: 640px) {
+                margin: 20px 0 24px 0;
+            }
 
             //&__items {}
 
@@ -36,6 +58,10 @@
 
                 background: url(../img/about__ico-check.svg) no-repeat 0 5px;
                 padding-left: 32px;
+
+                @media (min-width: 641px) and (max-width: 1200px) {
+                    font-size: 14px;
+                }
             }
 
             &__item:last-child {

@@ -151,7 +151,7 @@ body {
 
 .buttons-basic-outline-large {
     padding: 0px 39px;
-
+    height: 52px;
     font-weight: 700;
     font-size: 16px;
     line-height: 50px;
@@ -162,6 +162,11 @@ body {
     background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.buttons-basic-outline-large:hover {
+    border: 2px solid #F75E05;
+    text-decoration: underline;
 }
 
 .buttons-basic-outline-regular {
@@ -250,6 +255,13 @@ body {
         letter-spacing: 1px;
         text-transform: uppercase;
         color: #1E212C;
+
+        @media (min-width: 641px) and (max-width: 1200px) {
+            font-size: 14px;
+        }
+        @media (max-width: 640px) {
+            font-size: 14px;
+        }
     }
 
     &__title {
@@ -257,6 +269,13 @@ body {
         font-size: 46px;
         line-height: 130%;
         color: #1E212C;
+
+        @media (min-width: 641px) and (max-width: 1200px) {
+            font-size: 30px;
+        }
+        @media (max-width: 640px) {
+            font-size: 23px;
+        }
     }
 
     &--center {
@@ -364,9 +383,10 @@ body {
         border-top: 1px solid gainsboro;
         border-bottom: 1px solid gainsboro;
 
-        &__wrap{
+        &__wrap {
             padding: 10px 0 10px 0;
         }
+
         //&__item{}
 
         &__link {
