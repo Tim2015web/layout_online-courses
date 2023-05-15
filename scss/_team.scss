@@ -2,7 +2,7 @@
 
 .team {
     position: relative;
-    padding: 167px 0 0 0;
+    padding: 167px 20px 0 20px;
     background: #F4F5F7;
 
     .team-wrap {
@@ -22,12 +22,31 @@
         display: flex;
         justify-content: space-between;
 
+        @media (min-width: 641px) and (max-width: 1200px) {
+            flex-wrap: wrap;
+        }
+
+        @media (max-width: 640px) {
+            flex-wrap: wrap;
+        }
+
         &__card {
             width: 285px;
             z-index: 1;
+
+            @media (min-width: 641px) and (max-width: 1200px) {
+                width: 50%;
+                margin-bottom: 20px;
+            }
+
+            @media (max-width: 640px) {
+                width: 100%;
+                margin-bottom: 20px;
+            }
         }
 
         &__card-img {
+            margin: 0 auto;
             max-width: 285px;
             height: 340px;
             background: #FFCF2D;
@@ -106,22 +125,22 @@
         }
     }
 
-    .team-mask{
-        &__vector{
+    .team-mask {
+        &__vector {
             position: absolute;
             top: 83px;
             left: 204px;
             z-index: 0;
         }
 
-        &__dots{
+        &__dots {
             position: absolute;
             top: 35px;
             right: 525px;
             z-index: 0;
         }
 
-        &__shapes{
+        &__shapes {
             position: absolute;
             top: 536px;
             right: 0;

@@ -4,17 +4,44 @@
     .benefits-wrap {
         max-width: 1230px;
         margin: 150px auto 0 auto;
+        padding: 0 20px;
+
+        @media (min-width: 641px) and (max-width: 1200px) {
+            margin: 80px auto 0 auto;
+        }
+
+        @media (max-width: 640px) {
+            margin: 40px auto 0 auto;
+        }
     }
 
     .benefits-bar {
         display: flex;
         margin: 60px 0 0 0;
 
+        @media (min-width: 641px) and (max-width: 1200px) {
+            margin: 40px 0 0 0;
+            flex-wrap: wrap;
+        }
+
+        @media (max-width: 640px) {
+            margin: 20px 0 0 0;
+            flex-wrap: wrap;
+        }
+
         &__item {
             display: flex;
             justify-content: center;
             width: 25%;
             height: 46px;
+
+            @media (min-width: 641px) and (max-width: 1200px) {
+                width: 50%;
+            }
+
+            @media (max-width: 640px) {
+                width: 100%;
+            }
 
             &:hover {
                 border: 1px solid #FF3F3A;
@@ -61,9 +88,29 @@
         margin: 60px 0 0 0;
         justify-content: space-between;
 
+        position: relative;
+
+        @media (min-width: 641px) and (max-width: 1200px) {
+            margin: 40px 0 0 0;
+        }
+
+        @media (max-width: 640px) {
+            margin: 20px 0 0 0;
+        }
+
         &__content-wrap {
             width: 495px;
             margin: 122px 0 0 0;
+
+            @media (min-width: 641px) and (max-width: 1200px) {
+                margin: auto 0 auto 0;
+            }
+
+            @media (max-width: 640px) {
+                margin: 60px 0 0 0;
+                width: 100%;
+                margin: 60px 0 0 0;
+            }
         }
 
         &__title {
@@ -81,10 +128,31 @@
             color: #424551;
         }
 
-        //&__img-wrap {}
+        &__img-wrap {
 
-        &__img{
+
+            @media (max-width: 640px) {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+                opacity: 0.25;
+            }
+
+        }
+
+        &__img {
             width: 100%;
+
+            @media (max-width: 640px) {
+                height: 100%;
+                object-fit: cover;
+                //object-position: center 20px;
+
+            }
+
         }
     }
 }

@@ -3,7 +3,17 @@
 .events {
     margin: 121px 0 0 0;
     position: relative;
-    padding: 81px 0 80px 0;
+    padding: 81px 20px 80px 20px;
+
+    @media (min-width: 641px) and (max-width: 1200px) {
+        margin: 60px 0 0 0;
+        padding: 40px 20px;
+    }
+
+    @media (max-width: 640px) {
+        margin: 30px 0 0 0;
+        padding: 40px 20px;
+    }
 
     &::before {
         content: "";
@@ -23,6 +33,14 @@
 
         &__main {
             margin: 60px 0 0 0;
+
+            @media (min-width: 641px) and (max-width: 1200px) {
+                margin: 30px 0 0 0;
+            }
+
+            @media (max-width: 640px) {
+                margin: 30px 0 0 0;
+            }
         }
 
         &__card {
@@ -32,6 +50,16 @@
             background: #FFFFFF;
             border-radius: 4px;
             margin: 24px 0 0 0;
+
+            @media (min-width: 641px) and (max-width: 1200px) {
+                padding: 22px 26px;
+                //flex-wrap: wrap;
+            }
+
+            @media (max-width: 640px) {
+                padding: 16px 20px;
+                flex-wrap: wrap;
+            }
         }
 
         &__card:hover {
@@ -54,6 +82,15 @@
 
         &__month-and-time-wrap {
             margin: 0 0 0 20px;
+
+            @media (min-width: 641px) and (max-width: 1200px) {
+                margin: 0 20px 0 20px;
+                min-width: 66px;
+            }
+
+            @media (max-width: 640px) {
+                margin: 0 20px 0 20px;
+            }
         }
 
         &__month {
@@ -73,6 +110,15 @@
 
         &__info {
             width: 757px;
+
+            @media (min-width: 641px) and (max-width: 1200px) {
+                margin-right: 20px;
+
+            }
+
+            @media (max-width: 640px) {
+                margin-right: 20px;
+            }
         }
 
         //&__title {}
@@ -82,6 +128,14 @@
             font-size: 20px;
             line-height: 150%;
             color: #1E212C;
+
+            @media (min-width: 641px) and (max-width: 1200px) {
+                font-size: 18px;
+            }
+
+            @media (max-width: 640px) {
+                font-size: 18px;
+            }
 
             &:hover {
                 color: #FF3F3A;
@@ -96,7 +150,11 @@
             color: #787A80;
         }
 
-        //&__button-wrap{}
+        &__button-wrap{
+            @media (max-width: 640px) {
+                margin-top: 10px;
+            }
+        }
 
         &__button:hover {
             border: none;
@@ -110,6 +168,17 @@
             margin: 58px 0 0 0;
             display: flex;
             justify-content: center;
+
+            @media (min-width: 641px) and (max-width: 1200px) {
+                margin: 40px 0 0 0;
+
+            }
+
+            @media (max-width: 640px) {
+                margin: 20px 0 0 0;
+                flex-wrap: wrap;
+                justify-content: left;
+            }
         }
 
         &__cta-text {
@@ -118,6 +187,10 @@
             font-size: 28px;
             line-height: 150%;
             color: #1E212C;
+
+            @media (max-width: 640px) {
+                margin-bottom: 10px;
+            }
         }
     }
 

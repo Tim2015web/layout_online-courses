@@ -2,6 +2,7 @@
 
 .certificate {
     //height: 300px;
+    padding: 0 20px;
 
     .certificate-wrap {
         margin: 120px auto 0 auto;
@@ -9,10 +10,25 @@
         display: flex;
         justify-content: space-between;
         height: 454px;
+
+        @media (min-width: 641px) and (max-width: 1200px) {
+            margin: 60px auto 0 auto;
+        }
+
+        @media (max-width: 640px) {
+            margin: 30px auto 0 auto;
+            flex-wrap: wrap;
+        }
     }
 
     &__content {
         width: 397px;
+        margin-right: 20px;
+
+        @media (max-width: 640px) {
+            width: 100%;
+            margin: 0 auto;
+        }
     }
 
     &__text {
@@ -21,15 +37,35 @@
         font-size: 16px;
         line-height: 160%;
         color: #424551;
+
+        @media (min-width: 641px) and (max-width: 1200px) {
+            margin: 24px 0 0 0;
+        }
+
+        @media (max-width: 640px) {
+            margin: 12px 0 0 0;
+        }
     }
 
     &__ico-wrap {
         margin: 32px 0 0 0;
         display: flex;
         justify-content: space-between;
+
+        @media (min-width: 641px) and (max-width: 1200px) {
+            flex-wrap: wrap;
+            margin: 24px 0 0 0;
+        }
+
+        @media (max-width: 640px) {
+            flex-wrap: wrap;
+            margin: 12px 0 12px 0;
+        }
     }
 
-    //&__img-wrap{}
+    &__img-wrap{
+        z-index: 1;
+    }
 
     &__img {
         width: 100%;
