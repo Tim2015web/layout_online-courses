@@ -706,6 +706,11 @@ body {
   max-width: 705px;
   margin: 0 20px 0 0;
 }
+@media (min-width: 641px) and (max-width: 1200px) {
+  .about .about-wrap__img-wrap {
+    width: 50%;
+  }
+}
 @media (max-width: 640px) {
   .about .about-wrap__img-wrap {
     display: none;
@@ -752,6 +757,7 @@ body {
   left: 0;
   top: 150px;
   z-index: -1;
+  opacity: 0.6;
 }
 .about .about-mask__circles {
   position: absolute;

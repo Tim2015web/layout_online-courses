@@ -22,7 +22,11 @@
             max-width: 705px;
             margin: 0 20px 0 0;
 
-            @media (max-width: 640px) {
+            @media (min-width: 641px) and (max-width: 1200px) {
+                width: 50%;
+            }
+
+            @media (max-width: 640px) {                
                 display: none;
             }
         }
@@ -76,6 +80,7 @@
             left: 0;
             top: 150px;
             z-index: -1;
+            opacity: 0.6;
         }
 
         &__circles {
