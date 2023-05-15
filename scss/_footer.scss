@@ -21,11 +21,29 @@
         max-width: 1230px;
         display: flex;
         justify-content: space-between;
-        padding: 80px 0 60px 0;
+        padding: 80px 20px 60px 20px;
+
+        @media (min-width: 641px) and (max-width: 1200px) {
+            flex-wrap: wrap;
+        }
+
+        @media (max-width: 640px) {
+            flex-wrap: wrap;
+        }
     }
 
     &__logo-wrap {
-        width: 279px;
+        max-width: 279px;
+
+        @media (min-width: 641px) and (max-width: 1200px) {
+            margin-bottom: 20px;
+            margin-right: 10px;
+        }
+
+        @media (max-width: 640px) {
+            margin-bottom: 20px;
+            margin-right: 10px;
+        }
     }
 
     &__text {
@@ -60,7 +78,17 @@
         }
     }
 
-    //&__bot-menu{}
+    &__bot-menu{
+        @media (min-width: 641px) and (max-width: 1200px) {
+            margin-bottom: 20px;
+            margin-right: 10px;
+        }
+
+        @media (max-width: 640px) {
+            margin-bottom: 20px;
+            margin-right: 10px;
+        }
+    }
 
     &__title {
         font-weight: 700;
@@ -91,9 +119,29 @@
         }
     }
 
-    //&__bot-menu-courses{}
+    &__bot-menu-courses{
+        @media (min-width: 641px) and (max-width: 1200px) {
+            margin-bottom: 20px;
+            margin-right: 10px;
+        }
 
-    //&__contact{}
+        @media (max-width: 640px) {
+            margin-bottom: 20px;
+            margin-right: 10px;
+        }
+    }
+
+    &__contact{
+        @media (min-width: 641px) and (max-width: 1200px) {
+            margin-bottom: 20px;
+            margin-right: 20px;
+        }
+
+        @media (max-width: 640px) {
+            margin-bottom: 20px;
+            margin-right: 20px;
+        }
+    }
 
     &__icon {
         width: 16px;
@@ -110,7 +158,7 @@
             margin: 23px 0 0 0;
         }
 
-        &__field {       
+        &__field {
             width: 100%;
             padding: 9px 0 9px 12px;
 
@@ -147,6 +195,11 @@
 
     .footer-bottom {
         position: relative;
+        padding: 0 20px;
+
+        @media (max-width: 640px) {
+            padding: 0 10px;
+        }
 
         &::before {
             content: "";
@@ -183,7 +236,7 @@
             color: #FFFFFF;
             opacity: 0.6;
 
-            &:hover{
+            &:hover {
                 text-decoration: underline;
             }
         }

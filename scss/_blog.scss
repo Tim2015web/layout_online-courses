@@ -1,9 +1,19 @@
 /*Blog*/
 
 .blog {
+    padding: 20px;
+
     .blog-wrap {
         margin: 120px auto 180px auto;
         max-width: 1230px;
+
+        @media (min-width: 641px) and (max-width: 1200px) {
+            margin: 60px auto 90px auto;
+        }
+
+        @media (max-width: 640px) {
+            margin: 30px auto 45px auto;
+        }
     }
 
     .blog-header {
@@ -18,17 +28,32 @@
         display: flex;
         justify-content: space-between;
         margin: 60px 0 0 0;
+
+        @media (min-width: 641px) and (max-width: 1200px) {
+            margin: 30px 0 0 0;
+        }
+
+        @media (max-width: 640px) {
+            margin: 30px 0 0 0;
+            flex-wrap: wrap;
+        }
     }
 
     .blog-card {
         width: 390px;
+        margin: 0 5px;
+
+        @media (max-width: 640px) {
+            width: 100%;
+            margin-bottom: 20px;
+        }
 
         &__image-wrap {
             position: relative;
         }
 
         &__image {
-            max-width: 100%;
+            width: 100%;
             border-radius: 4px;
         }
 
@@ -72,8 +97,8 @@
             font-size: 14px;
             line-height: 150%;
             color: #787A80;
-            
-            &:hover{
+
+            &:hover {
                 text-decoration: underline;
             }
         }
@@ -87,13 +112,18 @@
         }
 
         &__title-link {
-            
+
             font-weight: 700;
             font-size: 20px;
             line-height: 150%;
             color: #1E212C;
 
-            &:hover{
+            @media (min-width: 641px) and (max-width: 1200px) {
+                font-size: 18px;
+            }
+@media (max-width: 640px) {}
+
+            &:hover {
                 color: #FF3F3A;
             }
         }
@@ -105,18 +135,18 @@
             color: #424551;
         }
 
-        &__link-wrap{
+        &__link-wrap {
             margin: 16px 0 0 0;
         }
 
-        &__link {            
+        &__link {
             font-weight: 700;
             font-size: 16px;
             line-height: 160%;
             color: #1E212C;
         }
 
-        &__link-ico{
+        &__link-ico {
             margin: 0 0 0 8px;
             vertical-align: middle;
         }
