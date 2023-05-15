@@ -16,7 +16,7 @@ barElement.forEach(e => e.addEventListener("click", function () {
    if (barStatus == false) {
       barStatus = true;
       barPanelElement.style = 'display: block;';
-      bodyElement.style = "overflow: hidden;";
+      bodyElement.style = "overflow: hidden;"; //Stop scroll
    } else {
       closeBarPanel();
    }
