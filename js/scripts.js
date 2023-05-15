@@ -1,4 +1,5 @@
 //Hamburger menu----------
+let bodyElement = document.querySelector("body");
 let barElement = document.querySelectorAll(".bar");
 let barPanelElement = document.querySelector(".bar-panel");
 let barStatus = false; //Panel display status
@@ -6,6 +7,7 @@ let barStatus = false; //Panel display status
 function closeBarPanel() { //Hide the panel
    barStatus = false;
    barPanelElement.style = 'display: none;';
+   bodyElement.style = "overflow: visible;";
 }
 
 barPanelElement.addEventListener("click", closeBarPanel);
@@ -14,6 +16,7 @@ barElement.forEach(e => e.addEventListener("click", function () {
    if (barStatus == false) {
       barStatus = true;
       barPanelElement.style = 'display: block;';
+      bodyElement.style = "overflow: hidden;";
    } else {
       closeBarPanel();
    }
