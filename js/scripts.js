@@ -1,12 +1,33 @@
+//Video panel----------
+let videoPanelElement = document.querySelector(".video-panel");
+let videoFrameElement = document.querySelector(".video-panel__video");
+let playBtmElement = document.querySelector(".play-video");
+let closeBtmElement = document.querySelector(".video-panel__close-btn");
+
+playBtmElement.addEventListener("click", function () {
+   videoPanelElement.style = "display: flex;";
+});
+
+//Я так и не нашел решение по остановки видео, поэтому сделал костыль через таймер (надо потом исправить)
+//Едва ли кто-то будет это читать. На улице сегодня хорошая погода +25 солнечно 16.05.2023
+function timerFunction() {
+   videoPanelElement.style = "display: none;";
+}
+
+closeBtmElement.addEventListener("click", function () {
+   videoFrameElement.src = videoFrameElement.src;
+   var timerId = setTimeout(timerFunction, 1000);
+});
+
 //Hamburger menu----------
 let bodyElement = document.querySelector("body");
 let barElement = document.querySelectorAll(".bar");
 let barPanelElement = document.querySelector(".bar-panel");
 let barStatus = false; //Panel display status
 
-function closeBarPanel() { //Hide the panel
+function closeBarPanel() {
    barStatus = false;
-   barPanelElement.style = 'display: none;';
+   barPanelElement.style = "display: none;";
    bodyElement.style = "overflow: visible;";
 }
 

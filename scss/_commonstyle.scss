@@ -187,6 +187,7 @@ body {
 .play-video {
     display: flex;
     margin: 12px 0 0 0;
+    width: 172px;
 
     &:hover {
         cursor: pointer;
@@ -445,7 +446,7 @@ body {
 }
 
 .video-panel {
-    display: flex;
+    display: none;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -456,12 +457,31 @@ body {
     justify-content: center;
 
     .video-panel-wrap {
+        position: relative;
         margin: auto 0;
         width: 560px;
         height: 315px;
     }
 
-    &__video { 
+    &__close-btn {
+        position: absolute;
+        width: 32px;
+        height: 32px;
+        top: -42px;
+        right: 0;
+        background-repeat: no-repeat;
+        background-image: url(/img/control__xmark.svg);
+        background-position: center;
+        z-index: 2;
+        cursor: pointer;
+
+        &:hover{
+            background-size: cover;
+            opacity: 0.6;
+        }
+    }
+
+    &__video {
         width: 100%;
         height: 100%;
     }
